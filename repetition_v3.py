@@ -2,8 +2,6 @@
 import os
 import sets
 
-#import find
-
 # Current directory
 os.chdir('/Users/marissagemma/Dropbox/Colloquial style study 13-14/Corpus')
 print os.getcwd()
