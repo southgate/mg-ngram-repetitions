@@ -1,6 +1,6 @@
 # N-Gram Repetition Analysis
 
-Python module to analyze repetition of n-grams up 15 words in length.
+Python module to analyze repetition of n-grams of up 15 words in length.
 
 ### Running
 
