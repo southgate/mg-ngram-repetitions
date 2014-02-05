@@ -309,7 +309,7 @@ class RepetitionAnalyzer:
                 self.detect_repetition(SIZE_WINDOW, input_file, repetition_index_file, repetition_dictionary)
 
     def analyze(self):
-        print "Analyzing " + os.getcwd()
+        print "Analyzing " + self.input_directory
 
         repetition_index_file = self.open_repetition_index_file()
         repetition_dictionary = self.create_repetition_dictionary()
@@ -323,9 +323,9 @@ class RepetitionAnalyzer:
 
         repetition_index_file.close()
 
-    def __init__(self, input_directory="Corpus"):
+    def __init__(self, input_directory):
         self.input_directory = input_directory
         self.create_output_directory()
 
 if __name__ == '__main__':
-    RepetitionAnalyzer().analyze()
+    RepetitionAnalyzer("Corpus").analyze()
